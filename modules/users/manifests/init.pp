@@ -1,6 +1,7 @@
 class users {
   user { 'leo':
     ensure          => 'present',
+    groups          => ['sudo'],
     managehome      => true,
     shell           => '/bin/bash',
   }
