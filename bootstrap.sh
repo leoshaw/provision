@@ -13,8 +13,5 @@ ssh $server_address << REMOTE_COMMANDS
 tar -xzf remote.tgz
 cd remote
 bash ./bootstrap.sh
-gem install librarian-puppet --no-ri --no-rdoc
-librarian-puppet install --verbose
-puppet apply --modulepath=./modules:./my_modules manifests/site.pp
 REMOTE_COMMANDS
 rm remote.tgz
