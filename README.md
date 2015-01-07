@@ -1,9 +1,11 @@
-# Provisioning
+# Provision
+
+Bootstraps a server by installing puppet and creating a deployer user with sudo
 
 ## Pre-requisites
 
 1. Linux server using apt for package management, with puppet available from the repo
-2. Ability to ssh onto the target server (username doesn't matter, as it can be supplied to the bootstrap script
+2. Ability to ssh onto the target server (username doesn't matter, as it can be supplied to the bootstrap script)
 
 ## Bootstrap
 

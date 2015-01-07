@@ -1,0 +1,10 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppetlabs-stdlib (4.5.0)
+    saz-sudo (3.0.9)
+      puppetlabs-stdlib (>= 2.3.0)
+
+DEPENDENCIES
+  saz-sudo (>= 0)
+
