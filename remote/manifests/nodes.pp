@@ -9,5 +9,15 @@ node default {
   sudo::conf { 'deployer':
     content => '%deployer ALL=(ALL) NOPASSWD: ALL',
   }
+
+  class { 'ssh::server':
+    options => {
+      'ChallengeResponseAuthentication' => 'no',
+      'PasswordAuthentication' => 'no',
+      'PermitRootLogin'        => 'no',
+      'Port'                   => [22],
+      'UsePAM'                 => 'no',
+    },
+  }
 }
 

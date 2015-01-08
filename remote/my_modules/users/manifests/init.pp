@@ -4,6 +4,7 @@ class users {
     groups          => ['sudo'],
     managehome      => true,
     shell           => '/bin/bash',
+    password        => 'bob',
   }
 
   ssh_authorized_key { 'leo':
