@@ -29,4 +29,17 @@ this will
   1. Run remote/bootstrap.sh to update the apt repos
   1. provision with puppet using ```remote/manifests/site.pp```
 
+## Manual actions
 
+If you haven't already set the hostname using the host's control panel, ssh into the machine and set it using e.g.
+
+```bash
+hostname <hostname>
+```
+
+And do the same in `/etc/hostname`
+
+You may also need to provide a way for the system to resolve a domain name too - it seems the easiest way to do this is add an entry to `/etc/hosts`, e.g.
+```bash
+127.0.1.1 <fqdn> <hostname>
+```
